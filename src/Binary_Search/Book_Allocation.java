@@ -43,9 +43,9 @@ public class Book_Allocation {
                 student++;
                 read_page=0;
             }
-        }
-        if(student>nos){
-            return false;
+            if(student>nos){
+                return false;
+            }
         }
         return true;
     }
