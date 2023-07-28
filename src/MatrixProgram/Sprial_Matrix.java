@@ -16,13 +16,16 @@ public class Sprial_Matrix {
         }
         minr++;
         for(int i=minr;i<=maxr;i++){
-            System.out.println(arr[i][maxc]);
+            System.out.println(arr[i][maxc]+" ");
         }
         minc--;
         for(int i=maxc;i<=minc;i--){
-            System.out.println(arr[maxr][i]);
+            System.out.println(arr[maxr][i]+" ");
         }
         maxr--;
-        for (int i=)
+        for (int i=maxr;i>=minr;i--){
+            System.out.println(arr[i][minc]+" ");
+        }
+        minc++;
     }
 }
