@@ -4,9 +4,9 @@ public class matrixsearch {
         int x=5;
         System.out.println(search(arr,x));
     }
-    public static int search(int arr[][],int x){
+    public static int search (int arr[][],int x){
         int row=0;
-        int col=arr[0].length;
+        int col=arr[0].length-1;
         while(col>=0 && row<arr.length){
             if(arr[row][col]==x){
                 return 1;
