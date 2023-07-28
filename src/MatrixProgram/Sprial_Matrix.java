@@ -12,7 +12,7 @@ public class Sprial_Matrix {
         int maxr = arr.length - 1;
         int minc = 0;
         int maxc = arr[0].length - 1;
-        int total=arr[arr.length][arr[0].length];
+        int total=arr.length*arr[0].length;
         int c=0;
         while (c<total) {
             for (int i = minc; i <= maxc; i++) {
