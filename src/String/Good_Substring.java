@@ -18,6 +18,7 @@ public class Good_Substring {
                 c=0;
             }
         }
+        ans=Math.max(ans,c);
         return ans;
     }
     public static boolean isVowel(char ch){
