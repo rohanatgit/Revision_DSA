@@ -19,11 +19,11 @@ public class Diagonal_Traverse {
               r=0;
               c=d;
           }
-          else{
-              r=d-m+1;
-               c=m-1;
+          else {
+              r = d - m + 1;
+              c = m - 1;
 
-
+          }
           ArrayList<Integer> al=new ArrayList<>();
           int i=0;
           while(r<n || c>=0) {
