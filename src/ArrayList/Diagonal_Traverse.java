@@ -23,7 +23,7 @@ public class Diagonal_Traverse {
               r=d-m+1;
                c=m-1;
 
-          }
+
           ArrayList<Integer> al=new ArrayList<>();
           int i=0;
           while(r<n || c>=0) {
