@@ -33,6 +33,7 @@ public class k_unique_Character_Substring {
                  if(freq[c]==0){
                      unique_count--;
                  }
+                 si++;
             }
 
 
