@@ -3,11 +3,11 @@ package Recursion;
 public class BoardPath {
     public static void main(String[] args) {
         int n=4;
-        System.out.println("\n"+boardpath(n,0,""));
+        System.out.print("\n"+boardpath(n,0,""));
     }
     public static int boardpath(int end,int curr,String ans){
         if(curr==end){
-            System.out.println(ans+" ");
+            System.out.print(ans+" ");
             return 1;
         }
         if(curr>end){
