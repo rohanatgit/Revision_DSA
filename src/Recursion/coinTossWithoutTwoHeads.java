@@ -10,7 +10,7 @@ public class coinTossWithoutTwoHeads {
             System.out.println(ans);
             return;
         }
-       if(ans.length()>=1 && ans.charAt(ans.length()-1)!='H'){
+       if(ans.length()==0 || ans.charAt(ans.length()-1)!='H'){
            printcoint(n-1,ans+"H");
        }
        printcoint(n-1,ans+"T");
