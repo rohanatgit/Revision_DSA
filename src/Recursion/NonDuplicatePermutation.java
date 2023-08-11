@@ -3,7 +3,7 @@ package Recursion;
 public class NonDuplicatePermutation {
     public static void main(String[] args) {
        String ques="abcd";
-       printPermutation(ques,"");
+       printPermutation(ques,"") ;
     }
     public static void printPermutation(String ques,String ans){
         if(ques.length()==0){
