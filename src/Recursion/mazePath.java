@@ -2,8 +2,9 @@ package Recursion;
 
 public class mazePath {
     public static void main(String[] args) {
-        int m=4;
-        int n=5;
+        int m=3;
+        int n=3;
+        printPath(n-1,m-1,0,0,"");
     }
     public static void printPath(int er,int ec,int cr,int cc,String ans){
         //er=end row
@@ -18,6 +19,6 @@ public class mazePath {
             return;
         }
         printPath(er,ec,cr,cc+1,ans+"H");
-        printPath(er,ec,cr+1,cc,ans+"H");
+        printPath(er,ec,cr+1,cc,ans+"V");
     }
 }
