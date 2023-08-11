@@ -3,6 +3,8 @@ package Recursion;
 public class keypadNOKIA {
     static String[] key={"","abc","def","ghi","jkl","mno","pqr","stu","vwx","yz"};
     public  static void main(String[] args) {
+        String abc="abc";
+        keyPad(abc,"");
     }
     public static void keyPad(String ques,String ans){
         if(ques.length()==0){
