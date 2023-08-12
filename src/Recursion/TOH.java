@@ -10,6 +10,8 @@ public class TOH {
        if(n==0){
            return ;
        }
+       printstep(n-1,s,d,h);
+        System.out.println("Move ");
     }
 
 }
