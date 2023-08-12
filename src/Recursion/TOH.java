@@ -7,7 +7,9 @@ public class TOH {
     }
 
     private static void printstep(int n, String s, String h,String d) {
-
+       if(n==0){
+           return ;
+       }
     }
 
 }
