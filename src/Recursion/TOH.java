@@ -11,7 +11,8 @@ public class TOH {
            return ;
        }
        printstep(n-1,s,d,h);
-        System.out.println("Move ");
+        System.out.println("Move "+n+"th form "+s+" to "+d);
+        printstep(n-1,h,s,d);
     }
 
 }
