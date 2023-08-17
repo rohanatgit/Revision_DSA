@@ -22,7 +22,7 @@ public class Queen_Permutation {
             if(board[i]==false){//Queen placed nahi hai
                 board[i]=true;
                 Queen(board,tq,qpsf+1,ans+"b"+i+"q"+qpsf);
-
+                board[i]=false;
             }
         }
     }
