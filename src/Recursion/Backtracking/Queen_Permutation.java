@@ -7,7 +7,6 @@ public class Queen_Permutation {
         boolean[] board=new boolean[4];
         int n=2;//kitne queen bethane hai
         Queen(board,n,0,"");
-
     }
     public static void Queen(boolean[] board,int tq,int qpsf,String ans){
         //tq=total Queen
