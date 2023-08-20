@@ -11,8 +11,26 @@ public class palindrome_Partition {
             System.out.println(ans);
             return ;
         }
+
         for(int i=1;i<=ques.length();i++){
-            printPartiotion(ques.substring(i),ans+ques.substring(0,i)+"|");
+            String s=ques.substring(0,i);
+            if(ispal(s))
+            printPartiotion(ques.substring(i),ans+s+"|");
         }
+    }
+
+    private static boolean ispal(String s) {
+        int i=0;
+        int j=s.length()-1;
+        while(i<j){
+            if(s.charAt(i)!=s.charAt(j)){
+                return false;
+            }
+            else{
+                i++;
+                j--;
+            }
+        }
+        return true;
     }
 }
