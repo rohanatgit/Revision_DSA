@@ -20,17 +20,21 @@ public class RatChasesitscheese {
 
     public static void printpath(char[][] maze, int cr, int cc, int[][] ans) {
 
-        if(cc<0 || cc>=maze.length || cr<0 || cr>=maze.length){
+        if(cc<0 || cc>=maze.length || cr<0 || cr>=maze.length || maze[cr][cc]=='X'){
             return;
         }
         int r[]={0,-1,0,1};
         int c[]={1,0,-1,0};
 
+        maze[cr][cc]='X';
+        ans[cr][cc]=1;
+
         for(int i=0;i<c.length;i++)
         {
             printpath(maze,cr+r[i],cc+c[i],ans);
         }
-
+        maze[cr][cc]='X';
+        ans[cr][cc]=0;
 
     }
 
