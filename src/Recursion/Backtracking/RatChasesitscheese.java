@@ -20,7 +20,9 @@ public class RatChasesitscheese {
 
     public static void printpath(char[][] maze, int cr, int cc, int[][] ans) {
 
-
+        if(cc<0 || cc>=maze.length || cr<0 || cr>=maze.length){
+            return;
+        }
         int r[]={0,-1,0,1};
         int c[]={1,0,-1,0};
 
