@@ -14,6 +14,7 @@ public class RatChasesitscheese {
                maze[i][j]=s.charAt(j);
            }
         }
+        int[][] ans=new int[][];
     }
 
 }
