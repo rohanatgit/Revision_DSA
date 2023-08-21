@@ -14,7 +14,23 @@ public class RatChasesitscheese {
                maze[i][j]=s.charAt(j);
            }
         }
-        int[][] ans=new int[][];
+        int[][] ans=new int[n][m];
+        printpath(maze,0,0,ans);
     }
+
+    public static void printpath(char[][] maze, int cr, int cc, int[][] ans) {
+
+
+        int r[]={0,-1,0,1};
+        int c[]={1,0,-1,0};
+
+        for(int i=0;i<c.length;i++)
+        {
+            printpath(maze,cr+r[i],cc+c[i],ans);
+        }
+
+
+    }
+
 
 }
