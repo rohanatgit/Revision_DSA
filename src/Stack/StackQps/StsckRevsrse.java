@@ -30,6 +30,7 @@ public class StsckRevsrse {
         //TODO Auto-generate method stub
         if(st.isEmpty()){
             st.push(x);
+            return;
         }
         int y=st.pop();
         Insert_Down(st,x);
