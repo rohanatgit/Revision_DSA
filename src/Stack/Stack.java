@@ -40,6 +40,7 @@ public class Stack {
         for(int i=0;i<top;i++){
             System.out.println(this.data[i]+" ");
         }
+        System.out.println();
     }
 
 }
