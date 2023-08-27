@@ -20,7 +20,17 @@ public class LinkedList {
             this.size++;
         }
         else{
-
+            nn.next=this.head;
+            this.head=nn;
+            this.size++;
         }
+    }
+    public void Display(){
+        Node temp=this.head;
+        while(temp!=null){
+            System.out.print(temp.data+"--->");
+            temp=temp.next;
+        }
+        System.out.println(".");
     }
 }
