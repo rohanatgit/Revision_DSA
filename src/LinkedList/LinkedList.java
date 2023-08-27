@@ -33,4 +33,12 @@ public class LinkedList {
         }
         System.out.println(".");
     }
+
+    public static void main(String[] args) {
+        LinkedList ll=new LinkedList();
+        ll.addfirst(10);
+        ll.addfirst(20);
+        ll.addfirst(30);
+        ll.Display();
+    }
 }
