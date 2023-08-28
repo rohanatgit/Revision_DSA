@@ -84,6 +84,15 @@ public class LinkedList {
         return temp;
   }
 
+
+  public int removefirst(){
+        Node temp=this.head;
+        this.head=this.head.next;
+        temp.next=null;
+        this.size--;
+        return temp.data;
+
+  }
     public static void main(String[] args) {
         LinkedList ll=new LinkedList();
         ll.addfirst(10);
