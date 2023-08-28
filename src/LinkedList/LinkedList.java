@@ -91,8 +91,64 @@ public class LinkedList {
         temp.next=null;
         this.size--;
         return temp.data;
-
   }
+
+  public int removelast() throws Exception {
+        if(this.size==1){
+            return removefirst();
+        }
+        Node temp=getnode(this.size-2);
+        int rv=tail.data;
+        this.tail=temp;
+        this.tail.next=null;
+        return rv;
+  }
+  public int removeindex(int k) throws Exception {
+        if(this.head==null){
+            throw new Exception("pgl");
+        }
+        if(k==0){
+            return removefirst();
+        }
+        else if(k==this.size-1){
+            Node kth=getnode(k);
+            Node k_1th=getnode(k-1);
+            k_1th.next=kth.next;
+            kth.next=null;
+            size--;
+            return kth.data;
+        }
+      return k;
+  }
+
+  //add at any index
+
+    public void addatindex(int item,int k) throws Exception {
+        if(k<0 || k>size){
+            throw new Exception("idex out of bound pgl k ki value thoda shi de");
+        }
+        if(k==0){
+            addfirst(item);
+        }
+        else if(k==size){
+            addLast(item);
+        }
+        else{
+            Node nn =new Node(item);
+            Node k_1th=getnode(k-1);
+            nn.next=k_1th.next;
+            k_1th.next=nn;
+            size++;
+        }
+    }
+
+
+
+
+
+
+
+
     public static void main(String[] args) {
         LinkedList ll=new LinkedList();
         ll.addfirst(10);
