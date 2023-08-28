@@ -8,4 +8,5 @@ public class Middle_of_LL {
             this.data=data;
         }
     }
+
 }
