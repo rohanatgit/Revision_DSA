@@ -24,4 +24,8 @@ public class Cycle_detection {
             this.size++;
         }
     }
+    public void CreateCycle(){
+        this.tail.next=this.head;
+
+    }
 }
