@@ -27,6 +27,8 @@ public class Cycle_detection {
     public void CreateCycle(){
         this.tail.next=this.head;//circular
 
+    }
+    public void hasCycle(){
 
     }
 }
