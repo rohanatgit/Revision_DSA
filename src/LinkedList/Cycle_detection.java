@@ -28,7 +28,16 @@ public class Cycle_detection {
         this.tail.next=this.head;//circular
 
     }
-    public void hasCycle(){
-
+    public boolean hasCycle(){
+        Node fast=head;
+        Node slow=head;
+        while(fast!=null && fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+            if(slow==fast){
+                return true;
+            }
+        }
+        return false;
     }
 }
